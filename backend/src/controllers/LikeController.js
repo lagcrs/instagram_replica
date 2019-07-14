@@ -1,6 +1,6 @@
 const Post = require('../models/Post');
 
-//exportando um objeto com contem os metodos do controller
+//exportando um objeto que contem os metodos do controller
 module.exports = {
     //codigos assincronos - promises
     async store(req, res){
