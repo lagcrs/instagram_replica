@@ -4,7 +4,8 @@ const Post = require('../models/Post');
 module.exports = {
     //codigos assincronos - promises
     async index(req, res){
-        const posts = await Post.find()
+        const posts = await Post.find().sort('-createdAt');
+        return res.json(posts);
 
     },
 
